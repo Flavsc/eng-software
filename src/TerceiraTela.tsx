@@ -1,3 +1,6 @@
+
+
+
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -35,8 +38,7 @@ export default function TerceiraTela() {
                 <div>O número:</div>
                 <div>{buscadorExport}</div>
                 <div>{resultado}</div>
-                {aparecerBotao && (
-                    <button>
+                {aparecerBotao && (<button>
                         <Link to="/">Voltar ao começo</Link>
                     </button>
                 )}
